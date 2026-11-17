@@ -3,7 +3,7 @@ name = "SigmaOS-herdr-runtime"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "herdr-runtime component"
+description = "Runtime agent and live coding environment for SigmaOS"
 upstream = []
 
 [contract]
