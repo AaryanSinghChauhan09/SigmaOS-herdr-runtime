@@ -1,0 +1,15 @@
+[package]
+name = "SigmaOS-herdr-runtime"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "SigmaOS herdr_runtime component"
+
+[lib]
+name = "herdr_runtime"
+path = "src/lib.rs"
+
+[dependencies]
+thiserror = "1"
+
+[dev-dependencies]
