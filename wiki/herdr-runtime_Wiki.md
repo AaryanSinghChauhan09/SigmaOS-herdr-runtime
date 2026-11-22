@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-herdr-runtime Component Wiki
+# SigmaOS-herdr-runtime Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-herdr-runtime provides Runtime agent and live coding environment for SigmaOS for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-herdr-runtime provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-herdr-runtime Abstraction
-- Fail-Fast on SigmaOS-herdr-runtime Initialization Errors
-- Deterministic SigmaOS-herdr-runtime Setup
-- Clear Abstraction Over SigmaOS-herdr-runtime APIs
-- Composition over Inheritance for SigmaOS-herdr-runtime extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-herdr-runtime Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-herdr-runtime Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-herdr-runtime Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-herdr-runtime APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-herdr-runtime extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-herdr-runtime follows a SigmaOS-herdr-runtime pattern:
+SigmaOS-herdr-runtime follows a SigmaOS-herdr-runtime pattern:
 - **SigmaOS-herdr-runtime Core**: Provides SigmaOS-herdr-runtime support, SigmaOS-herdr-runtime management, and SigmaOS-herdr-runtime tracking
 - **Management**: Supports SigmaOS-herdr-runtime management, SigmaOS-herdr-runtime configuration, and SigmaOS-herdr-runtime lifecycle
 - **Tracking**: Supports SigmaOS-herdr-runtime status, SigmaOS-herdr-runtime tracking, and SigmaOS-herdr-runtime lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-herdr-runtime follows a SigmaOS-herdr-runtime pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-herdr-runtime by given configuration
--  - Register a SigmaOS-herdr-runtime by given name
--  - Get SigmaOS-herdr-runtime status and SigmaOS-herdr-runtime availability
--  - Track SigmaOS-herdr-runtime management and SigmaOS-herdr-runtime tracking
+- Manage a SigmaOS-herdr-runtime by given configuration
+- Register a SigmaOS-herdr-runtime by given name
+- Get SigmaOS-herdr-runtime status and SigmaOS-herdr-runtime availability
+- Track SigmaOS-herdr-runtime management and SigmaOS-herdr-runtime tracking
 - Error types for SigmaOS-herdr-runtime failure scenarios or unsupported SigmaOS-herdr-runtime types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-herdr-runtime init, SigmaOS-herdr-runtime management)
 3. **Assert**: Verify the expected SigmaOS-herdr-runtime results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-herdr-runtime initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-herdr-runtime failure scenarios
 - Unit tests provided for SigmaOS-herdr-runtime management and configuration
